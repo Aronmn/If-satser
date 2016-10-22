@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 namespace If_satser
 {
     class Program
-    { //Övning 1
+    { 
         static void Main(string[] args)
         {
-            Console.WriteLine("Mata in ett heltal");
+            //Övning 1
+
+            Console.WriteLine("Skriv in mönsterdjup");
             string inmatat = Console.ReadLine();
             double x = double.Parse(inmatat);
 
@@ -25,6 +27,7 @@ namespace If_satser
             Console.ReadLine();
 
             //Övning 2
+
             Console.WriteLine("Mata in ålder:");
             string inmatat2 = Console.ReadLine();
             int x1 = int.Parse(inmatat2);
@@ -49,7 +52,9 @@ namespace If_satser
             {
                 Console.WriteLine("Ogiltig ålder");
             }
+
             //Övning 3
+
             Console.WriteLine("Mata in tal 1:");
             string inmatat3 = Console.ReadLine();
             Console.WriteLine("Mata in tal 2:");
@@ -73,6 +78,21 @@ namespace If_satser
             Console.ReadKey();
 
             //Övning 4
+
+            Console.WriteLine("Mata in ett heltal");
+            string inmatat5 = Console.ReadLine();
+            int tal = int.Parse(inmatat5);
+
+            if (tal%7 != 0)
+            {
+                Console.WriteLine("Talet är jämt delbart med 7");
+            }
+
+            else
+            {
+                Console.WriteLine("Talet är ej jämt delbart med 7. Resten blir: " + (tal % 7));
+            }
+               
         }
 
     }
